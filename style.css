@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: #b1d1f4; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #bbbdbe;
+    color: #333;
+}
+#header {
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+  }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 35px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.logo {
+    width: 140px; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px 20px;
+}
+
+nav ul li a {
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #858585;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+}
+  
+.header-text h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 20px;
+}
+  
+.header-text h1 span {
+    color: #5468e8;
+}
+
+  @media (max-width: 800px) {
+    #first-nav {
+      padding-top: 35px;
+      font-size: 30px;
+    }
+    
+    nav{
+        margin: 10px 25px;
+    }
+    
+    nav .fa-solid {
+      display: block;
+      font-size: 25px;
+    }
+    nav ul {
+      background: #242424;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+      opacity: 1;
+      height: fit-content;
+    }
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+    nav ul li a{
+      color: #fff;
+    }
+    nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .card {
+      width: 80%;
+    }
+
+    .form-control input,
+    .form-control textarea {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer .social-media a:hover {
+    color: #ffd700;
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ffd700;
+}
+
+.blog-post {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.blog-post p {
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-post a:hover {
+    color: #ffd700;
+}
+
+/* Scroll-to-Top Button Styles */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #66bb6a;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #4caf50;
+    transform: scale(1.1);
+  }
+
