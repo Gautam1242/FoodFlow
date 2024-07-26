@@ -68,7 +68,7 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
       }
       .card:hover{
-        background-color: #dad8d8;
+        background-color: #e7eeea;
       }
 
       .card h2 {
@@ -296,6 +296,19 @@
         opacity: 1;
         transform: translateY(0);
       }
+      #cardbtn {
+        padding: 5px;
+        background-color: #fafdfa;
+        border-radius: 10px;
+        border: 2px solid rgb(167, 163, 163);
+        width: 190px;
+        height: 50px;
+        transition: 0.89s;
+      }
+      #cardbtn:hover {
+        background-color: rgb(67, 246, 88);
+        scale: 1.1;
+      }
     </style>
   </head>
 
@@ -337,25 +350,28 @@
         </p>
         <div class="cards">
           <div class="card">
-            <h2>Donate Food</h2>
+            <h2>Donate Food</h2><hr>
             <p>
               Contribute your excess food to those in need and help fight hunger
               in your community. Every meal counts!
             </p>
+            <button id="cardbtn">Donate Food</button>
           </div>
           <div class="card">
-            <h2>Volunteer</h2>
+            <h2>Volunteer</h2><hr>
             <p>
               Join us as a volunteer to help distribute meals and make a
               difference. Your time and effort can bring smiles to many faces.
             </p>
+            <button id="cardbtn">Volunteer</button>
           </div>
           <div class="card">
-            <h2>Partner with Us</h2>
+            <h2>Partner with Us</h2><hr>
             <p>
               Become a partner and help us reach more people in need. Together,
               we can build a hunger-free world.
             </p>
+            <button id="cardbtn">Partner with us</button>
           </div>
         </div>
       </section>
