@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodFlow - Our Services</title>
+    <link rel="stylesheet" href="service.css">
     <link rel="stylesheet" href="style.css" />
     <style>
       /* Basic Reset */
@@ -128,6 +129,12 @@
             <li><a href="news.html">News</a></li>
             <li><a href="blogs.html">Blogs</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a id="greenbtn" href="login.html"
+                ><button class="button--green" id="green-button">
+                  Login
+                </button></a>
+            </li>
 
             <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
@@ -135,47 +142,85 @@
         </nav>
       </div>
     </div>
-    <section id="services">
-      <h1>Our Services</h1>
-      <div class="service-list">
+    <div class="container-below-header">
+      <img src="Food-distribution_20200825.jpg" alt="" />
+      <div class="text-overlay"></div>
+    </div>
+
+    <div class="service-container">
+      <a href="#">
         <div class="service-item">
-          <h2>Food Donation Collection</h2>
-          <p>
-            We facilitate the collection of surplus food from restaurants,
-            hotels, and individuals. Our team ensures that the food is safely
-            transported to local charities and organizations that distribute it
-            to those in need.
-          </p>
+          <div class="icon-logo">
+            <img src="food-truck.svg" alt="" />
+          </div>
+          <div class="service-heading">
+            <h2>Food Donation Collection</h2>
+          </div>
+          <div class="service-desc">
+            <p>
+              We facilitate the collection of surplus food from restaurants,
+              hotels, and individuals. Our team ensures that the food is safely
+              transported to local charities and organizations that distribute
+              it to those in need.
+            </p>
+          </div>
         </div>
+      </a>
+      <a href="#">
         <div class="service-item">
-          <h2>Meal Distribution</h2>
-          <p>
-            Our volunteers and partners work tirelessly to distribute meals to
-            food-insecure individuals and families. We coordinate with local
-            shelters, food banks, and community centers to ensure that donated
-            food reaches those who need it most.
-          </p>
+          <div class="icon-logo">
+            <img src="meal.svg" alt="" />
+          </div>
+          <div class="service-heading">
+            <h2>Meal Distribution</h2>
+          </div>
+          <div class="service-desc">
+            <p>
+              Our volunteers and partners work tirelessly to distribute meals to
+              food-insecure individuals and families. We coordinate with local
+              shelters, food banks, and community centers to ensure that donated
+              food reaches those who need it most.
+            </p>
+          </div>
         </div>
+      </a>
+      <a href="#">
         <div class="service-item">
-          <h2>Community Outreach Programs</h2>
-          <p>
-            FoodFlow organizes various community outreach programs to raise
-            awareness about food insecurity and food waste. We conduct
-            educational workshops, food drives, and events to engage the
-            community and promote sustainable practices.
-          </p>
+          <div class="icon-logo">
+            <img src="community.svg" alt="" />
+          </div>
+          <div class="service-heading">
+            <h2>Community Outreach Programs</h2>
+          </div>
+          <div class="service-desc">
+            <p>
+              FoodFlow organizes various community outreach programs to raise
+              awareness about food insecurity and food waste.educational
+              workshops, food drives, and events to engage the community and
+              promote sustainable practices.
+            </p>
+          </div>
         </div>
+      </a>
+      <a href="#">
         <div class="service-item">
-          <h2>Volunteer Opportunities</h2>
-          <p>
-            We offer a range of volunteer opportunities for individuals who want
-            to make a difference. From meal distribution to organizing events,
-            our volunteers play a crucial role in our mission to eradicate
-            hunger.
-          </p>
+          <div class="icon-logo">
+            <img src="volunteer.svg" alt="" />
+          </div>
+          <div class="service-heading">
+            <h2>Volunteer Opportunities</h2>
+          </div>
+          <div class="service-desc">
+            <p>
+              We offer a range of volunteer opportunities for individuals who
+              want to make a difference. From meal distribution to organizing
+              events, our volunteers play a crucial role in our mission to
+              eradicate hunger.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </a>
+    </div>
     <footer>
       <p>© 2024 FoodFlow. All rights reserved.</p>
       <div class="social-media">
