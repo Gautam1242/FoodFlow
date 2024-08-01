@@ -53,12 +53,8 @@ body {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.banner.banner-logo{
-    /* background-image: url("../images/img1.jpg"); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
+
 
 .container {
     width: 100%;
