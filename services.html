@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodFlow - Our Services</title>
-    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="service.css" />
     <link rel="stylesheet" href="style.css" />
     <style>
       /* Basic Reset */
@@ -15,7 +15,6 @@
         margin: 0;
       }
       /* Header Styles */
-      
 
       /* Section Styles */
       section {
@@ -105,7 +104,6 @@
         color: #66bb6a;
       }
 
-
       /* Media Queries */
       @media (max-width: 768px) {
         .service-item {
@@ -120,8 +118,17 @@
     <div id="header">
       <div class="container">
         <nav>
-          <!-- <img src="images/logo.png" class="logo" /> -->
-          <h1 style="color: #292a2b" id="first-nav"><span style="color: #11a11b;font-weight: 800;"><span style="font-size: xx-large;">F</span>OOD</span> <span style="color: rgb(64, 153, 180);font-weight: 800;"><span style="font-size: xx-large;">F</span>LOW</span></h1>
+          <div class="banner">
+            <div class="banner-logo">
+              <img
+                src="Logo.png"
+                width="180px"
+                height="75px"
+                style="padding-top: 18px"
+                alt=""
+              />
+            </div>
+          </div>
           <ul id="sidemenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -133,7 +140,8 @@
               <a id="greenbtn" href="login.html"
                 ><button class="button--green" id="green-button">
                   Login
-                </button></a>
+                </button></a
+              >
             </li>
 
             <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
@@ -235,7 +243,9 @@
         ></a>
       </div>
     </footer>
-    <button id="scrollTopBtn" title="Go to top">Top</button>
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/eb93dfa716.js"
